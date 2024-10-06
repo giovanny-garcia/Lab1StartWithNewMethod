@@ -19,7 +19,8 @@ private:
 
 public:
 	ArrayBag();
-	void doSomething(); // *** Add new method to the ADT header file
+	ItemType findSmallest();
+	ItemType findLargest();
 	int getCurrentSize() const;
 	bool isEmpty() const;
 	bool add(const ItemType& newEntry);

@@ -4,12 +4,6 @@
 
 // *** Add new method code to the ADT implementation file
 template<class ItemType>
-void ArrayBag<ItemType>::doSomething()
-{
-	std::cout << "doing something\n";
-}  // end doSomething
-
-template<class ItemType>
 ArrayBag<ItemType>::ArrayBag(): itemCount(0), maxItems(DEFAULT_CAPACITY)
 {
 }  // end default constructor
