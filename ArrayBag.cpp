@@ -77,6 +77,17 @@ bool ArrayBag<ItemType>::contains(const ItemType& anEntry) const
 	return getIndexOf(anEntry) > -1;
 }  // end contains
 
+template<class ItemType>
+void ArrayBag<ItemType>::findSmallest() const
+{
+   return 0;
+}
+
+template<class ItemType>
+void ArrayBag<ItemType>::findLargest() const
+{
+   return 0;
+}
 /* ALTERNATE 1: First version
 template<class ItemType>
 bool ArrayBag<ItemType>::contains(const ItemType& target) const 

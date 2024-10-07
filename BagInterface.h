@@ -43,6 +43,7 @@ public:
 	// Input: anEntry  The entry to locate
 	// Returns: True if bag contains anEntry, or false otherwise
 	virtual bool contains(const ItemType& anEntry) const = 0;
+
    
 	// Empties and then fills a given vector with all entries that
 	// are in this bag.

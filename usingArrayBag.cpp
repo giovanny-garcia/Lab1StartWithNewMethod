@@ -65,7 +65,7 @@ void menu(ArrayBag<int> &bag)
 		{
 		case 1:
 			int addValue;
-			cout << "Enter value: \n";
+			cout << "\nEnter value: \n";
 			cin >> addValue;
 			bag.add(addValue);
 			cout << "Adding value " << addValue << endl;
@@ -73,23 +73,24 @@ void menu(ArrayBag<int> &bag)
 			
 		case 2:
 			int removeValue;
-			cout << "Enter value to be removed: \n";
+			cout << "\nEnter value to be removed: \n";
 			cin >> removeValue;
 			bag.remove(removeValue);
 			cout << "Removing value " << removeValue << endl;
 			break;
-		case 3:
+		case 3:	//displays bag contents
 		{
 			std::vector<int> bagContents = bag.toVector();
 				for (std::size_t i = 0; i < bagContents.size(); i++) 
 				{
-        		std::cout << bagContents[i] << " ";
+        		std::cout << "[" << bagContents[i] << "] ";
 				}
+			cout << endl;
 		}
 			break;
-		case 4:
+		case 4:  	//find smallest value
 			break;
-		case 5:
+		case 5:		//find largest value
 			break;
 		case 6:
 			break;

@@ -19,8 +19,8 @@ private:
 
 public:
 	ArrayBag();
-	ItemType findSmallest();
-	ItemType findLargest();
+	void findSmallest() const;
+	void findLargest() const;
 	int getCurrentSize() const;
 	bool isEmpty() const;
 	bool add(const ItemType& newEntry);
